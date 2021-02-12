@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-detail.component.css']
 })
 export class VideoDetailComponent implements OnInit {
-
+  title = "Netflix Movies "
   constructor() { }
 
   ngOnInit(): void {

@@ -23,7 +23,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
   ],
   providers: [],
-  bootstrap: [VideoListComponent]
+  bootstrap: [VideoListComponent, AppComponent, VideoDetailComponent] 
 })
 export class AppModule { }
 
