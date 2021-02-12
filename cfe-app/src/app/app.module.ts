@@ -3,16 +3,29 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { VideoListComponent } from './video-list/video-list.component';
+import { VideoDetailComponent } from './video-detail/video-detail.component';
+import { ImageDetailComponent } from './image-detail/image-detail.component';
+import { ImageListComponent } from './image-list/image-list.component';
+import { FormsModule } from '@angular/forms';
 
-@NgModule({
+@NgModule({ //decorator
   declarations: [
-    AppComponent
+    AppComponent,
+    VideoListComponent,
+    VideoDetailComponent,
+    ImageDetailComponent,
+    ImageListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [VideoListComponent]
 })
 export class AppModule { }
+
+
+//Creating a new component = ng g component <name of component>
